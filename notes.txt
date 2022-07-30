@@ -1,0 +1,14 @@
+https://www.simplilearn.com/data-science-projects-article
+
+https://developers.google.com/youtube/v3
+https://www.programmableweb.com/api/youtube
+
+https://developer.spotify.com/documentation/web-api/
+https://www.programmableweb.com/company/spotify
+
+https://api.beatport.com/v4/docs/
+https://www.programmableweb.com/api/beatport-rest-api
+
+https://www.mediawiki.org/wiki/Wikimedia_REST_API
+https://www.programmableweb.com/api/wikipedia/sdks
+
