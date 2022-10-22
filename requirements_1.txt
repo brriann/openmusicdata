@@ -1,0 +1,8 @@
+wheel
+spotipy
+redis==4.3.4
+redisgraph
+notebook
+jupyterlab
+networkx
+psycopg2-binary

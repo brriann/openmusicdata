@@ -1,0 +1,5 @@
+wheel
+spotipy
+redis==4.3.4
+redisgraph
+psycopg2-binary
