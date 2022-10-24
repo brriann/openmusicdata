@@ -2,6 +2,13 @@
 open-source data project to connect music
 
 
+## DEBUG IN VSCODE
+
+path to Interpreter:
+~/dev/.venvs/.omd/bin/python3
+
+## Python3 / Venv setup notes
+
 mkdir /dev/.virtualenv
 
 sudo apt-get install python3-venv
@@ -44,3 +51,4 @@ pip install jupyterlab
 
 pip install notebook
 >> jupyter notebook
+
