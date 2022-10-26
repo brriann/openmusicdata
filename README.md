@@ -52,3 +52,18 @@ pip install jupyterlab
 pip install notebook
 >> jupyter notebook
 
+## Python Debugging with PDB
+
+python3
+>> import pdb
+>> import spotipy1
+
+pdb.run(spotipy1.getData())
+
+inline code:
+
+import pdb
+pdb.set_trace();
+
+https://docs.python.org/3/library/pdb.html#debugger-commands
+
