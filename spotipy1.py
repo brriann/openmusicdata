@@ -11,7 +11,7 @@ def getData():
     # for idx, track in enumerate(results['tracks']['items']):
     #     print(idx, track['name'])
 
-    pdb.set_trace()
+    # pdb.set_trace()
     seedArtistId = "6V4bkdqHvsJ2lqkIl4qnG7" # Nicolas Jaar
 
     relatedArtists = sp.artist_related_artists(seedArtistId)
@@ -33,3 +33,5 @@ def getData():
                 for subTrackIdx, subTrack in enumerate(subArtistTracks['tracks']):
                     if subTrackIdx < 3:
                         print(">>>>>>", subTrackIdx, subTrack['id'], subTrack['name'], f'({subArtistName})')
+
+getData()
