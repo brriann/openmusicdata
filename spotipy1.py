@@ -3,6 +3,26 @@ import spotipy
 import pdb
 from spotipy.oauth2 import SpotifyClientCredentials
 
+# https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-analysis
+# https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features
+# https://en.wikipedia.org/wiki/Pitch_class
+
+def getTracks():
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.clientId,
+                                                            client_secret=config.clientSecret))
+
+    artistId = "5a0etAzO5V26gvlbmHzT9W" # Nicolas Jaar
+    artistTracks = sp.artist_top_tracks(artistId)
+    for trackIdx, track in enumerate(artistTracks['tracks']):
+        if trackIdx < 5:
+            trackAF = sp.audio_features(track['id'])[0]
+            print(">>", track['id'], track['name'], trackAF['tempo'], trackAF['key'])
+            # print('trackAudioFeatures', trackAF)
+            # trackAudioAnalysis = sp.audio_analysis(track['id'])
+            # print('trackAudioAnalysis: ', track['name'], '>>', trackAudioAnalysis)
+            # trackAudioFeatures = sp.audio_features(track['id'])
+            # print('trackAudioFeatures: ', track['name'], '>>', trackAudioFeatures)
+
 def getData():
     sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.clientId,
                                                             client_secret=config.clientSecret))
@@ -34,4 +54,5 @@ def getData():
                     if subTrackIdx < 3:
                         print(">>>>>>", subTrackIdx, subTrack['id'], subTrack['name'], f'({subArtistName})')
 
-getData()
+getTracks()
+# getData()
