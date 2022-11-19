@@ -9,10 +9,30 @@ create table if not exists artists (
 create table if not exists tracks (
     id serial primary key not null,
     spotifyId varchar(32),
-    artistId int references artists (id),
+    artistId int not null references artists (id),
     name varchar(128) not null,
     bpm decimal(6,3),
     key int
+);
+
+create table if not exists djs (
+    id serial primary key not null,
+    artistId int unique references artists (id),
+    name varchar(128) not null
+);
+
+create table if not exists djsets (
+    id serial primary key not null,
+    djId int not null references djs (id),
+    name varchar(128) not null
+);
+
+create table if not exists djsettracks (
+    id serial primary key not null,
+    trackId int not null references tracks (id),
+    djSetId int not null references djsets (id),
+    ordinal int not null,
+    unique (djSetId, ordinal)
 );
 
 create index tracks_bpm on tracks (bpm);
