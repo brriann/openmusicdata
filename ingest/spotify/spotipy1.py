@@ -8,8 +8,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 # https://en.wikipedia.org/wiki/Pitch_class
 
 def getTracks():
-    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.clientId,
-                                                            client_secret=config.clientSecret))
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.spotifyClientId,
+                                                            client_secret=config.spotifyClientSecret))
 
     artistId = "5a0etAzO5V26gvlbmHzT9W" # Nicolas Jaar
     artistTracks = sp.artist_top_tracks(artistId)
@@ -24,8 +24,8 @@ def getTracks():
             # print('trackAudioFeatures: ', track['name'], '>>', trackAudioFeatures)
 
 def getData():
-    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.clientId,
-                                                            client_secret=config.clientSecret))
+    sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.spotifyClientId,
+                                                            client_secret=config.spotifyClientSecret))
 
     # results = sp.search(q='weezer', limit=20)
     # for idx, track in enumerate(results['tracks']['items']):
