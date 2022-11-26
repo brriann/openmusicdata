@@ -1,5 +1,7 @@
 create database openmusicdata;
 
+-- Phase 1 - Artist + Track aggregation
+
 create table if not exists artists (
     id serial primary key not null,
     spotifyId varchar(32),
@@ -14,6 +16,35 @@ create table if not exists tracks (
     bpm decimal(6,3),
     key int
 );
+
+create table if not exists artistrelations (
+    id serial primary key not null,
+    sourceArtistId int not null,
+    targetArtistId int not null,
+    constraint fk_artistrelations_artists_source
+        foreign key (sourceArtistId)
+        references artists (id)
+);
+
+alter table artistrelations
+    add constraint fk_artistrelations_artists_target
+        foreign key (targetArtistId)
+        references artists (id);
+
+create table if not exists queriesrelatedartist (
+    id serial primary key not null,
+    seedArtistId int not null references artists (id),
+    artistsSaved int not null default 0,
+    relationsSaved int not null default 0
+);
+
+create table if not exists queriestoptracks (
+    id serial primary key not null,
+    seedArtistId int not null references artists (id),
+    tracksSaved int not null default 0
+);
+
+-- Phase 2 - DJ Set aggregation
 
 create table if not exists djs (
     id serial primary key not null,
