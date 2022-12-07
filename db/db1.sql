@@ -1,6 +1,6 @@
 create database openmusicdata;
 
--- Phase 1 - Artist + Track aggregation
+-- Artist aggregation
 
 create table if not exists artists (
     id serial primary key not null,
@@ -8,14 +8,7 @@ create table if not exists artists (
     name varchar(128) not null
 );
 
-create table if not exists tracks (
-    id serial primary key not null,
-    spotifyId varchar(32),
-    artistId int not null references artists (id),
-    name varchar(128) not null,
-    bpm decimal(6,3),
-    key int
-);
+create index artists_spotifyId on artists (spotifyId);
 
 create table if not exists artistrelations (
     id serial primary key not null,
@@ -38,13 +31,27 @@ create table if not exists queriesrelatedartist (
     relationsSaved int not null default 0
 );
 
+-- Track aggregation
+
+create table if not exists tracks (
+    id serial primary key not null,
+    spotifyId varchar(32),
+    artistId int not null references artists (id),
+    name varchar(128) not null,
+    bpm decimal(6,3),
+    key int
+);
+
+create index tracks_bpm on tracks (bpm);
+create index tracks_key on tracks (key);
+
 create table if not exists queriestoptracks (
     id serial primary key not null,
     seedArtistId int not null references artists (id),
     tracksSaved int not null default 0
 );
 
--- Phase 2 - DJ Set aggregation
+--  DJ Set aggregation
 
 create table if not exists djs (
     id serial primary key not null,
@@ -66,8 +73,7 @@ create table if not exists djsettracks (
     unique (djSetId, ordinal)
 );
 
-create index tracks_bpm on tracks (bpm);
-create index tracks_key on tracks (key);
+-- Seed Data
 
 insert into artists (spotifyId, name) values ('3LHqODf1hGAgZ5LTw1Gf4C', 'Acid Pauli');
 insert into artists (spotifyId, name) values ('5a0etAzO5V26gvlbmHzT9W', 'Nicolas Jaar');
@@ -129,5 +135,7 @@ insert into tracks (
     108.372, 
     1
 );
+
+-- Diagnostics
 
 explain select * from artists where name = 'Acid Pauli'
