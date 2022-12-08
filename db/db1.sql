@@ -10,6 +10,8 @@ create table if not exists artists (
 
 create index artists_spotifyId on artists (spotifyId);
 
+alter table artists add column highlighted boolean not null default false;
+
 create table if not exists artistrelations (
     id serial primary key not null,
     sourceArtistId int not null,

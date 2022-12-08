@@ -4,7 +4,6 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # INITIALIZE
-
 # postgres / psycopg2
 conn = psycopg2.connect(
     dbname=config.dbName,
@@ -18,16 +17,17 @@ conn = psycopg2.connect(
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.spotifyClientId,
                                                             client_secret=config.spotifyClientSecret))
 
-# set parameters, eg search depth (get related artists of a related artist of a ...)
-# TODO
-searchDepth = 2
-
 # SEED DATA
 # insert seed artist into artists table (if no count)
 seedArtistSpotifyId = '5a0etAzO5V26gvlbmHzT9W'
 seedArtistName = 'Nicolas Jaar'
 
 cur = conn.cursor()
+
+cur.execute('select count(*) from artists')
+
+artistsCount = cur.fetchone()
+print('artistsCount', artistsCount)
 
 cur.execute('select id, spotifyId from artists where spotifyid = %s', 
     (seedArtistSpotifyId,))
@@ -42,19 +42,22 @@ if existingSeedArtist is None:
 else:
     seedArtistPrimaryKey = existingSeedArtist[0]
 
-print(seedArtistPrimaryKey)
+print('seedArtistPrimaryKey', seedArtistPrimaryKey)
 
 cur.execute('select spotifyId from artists where id = %s', 
     (seedArtistPrimaryKey,))
 
 seedArtistSpotifyId = cur.fetchone()[0]
-print(seedArtistSpotifyId)
+print('seedArtistSpotifyId', seedArtistSpotifyId)
 
 
-# ITERATE
-# for artist
 # if no relatedartistqueries for seedArtistId
-# TODO
+cur.execute('select id from queriesrelatedartist where seedartistid = %s',
+    (seedArtistPrimaryKey,))
+
+existingQueryRelatedArtist = cur.fetchone()
+
+print('existingQueryRelatedArtist', existingQueryRelatedArtist)
 
 # set counters
 artistsSaved = 0
@@ -67,7 +70,6 @@ for idx, artist in enumerate(relatedArtists['artists']):
     print(artist['id'], artist['name'])
 
     relatedArtistPrimaryKey = 0
-    artistExisted = False
     # check for existence of artist by spotifyId
     cur.execute('select id from artists where spotifyId = %s',
         (artist['id'],))
@@ -81,7 +83,6 @@ for idx, artist in enumerate(relatedArtists['artists']):
         relatedArtistPrimaryKey = cur.fetchone()[0]
         artistsSaved += 1
     else:
-        artistExisted = True
         relatedArtistPrimaryKey = existingArtist[0]
 
     print('relatedArtistPrimaryKey', relatedArtistPrimaryKey)
@@ -97,11 +98,13 @@ for idx, artist in enumerate(relatedArtists['artists']):
             (seedArtistPrimaryKey, relatedArtistPrimaryKey))
         artistRelationsSaved += 1
 
-conn.commit()
+
 print('artistRelationsSaved', artistRelationsSaved)
 print('artistsSaved', artistsSaved)
 
 # - - save queriesrelatedartist
-# - - set new seedArtist (simply traverse artists table? from relatedartists?)
+cur.execute('insert into queriesrelatedartist (seedArtistId, artistsSaved, relationsSaved) values(%s, %s, %s)',
+    (seedArtistPrimaryKey, artistsSaved, artistRelationsSaved))
 
+conn.commit()
 cur.close()
