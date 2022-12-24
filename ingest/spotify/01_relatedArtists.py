@@ -6,7 +6,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 # INITIALIZE
 
 #settings
-ARTIST_LIMIT = 200
+ARTIST_LIMIT = 1000
 
 # postgres / psycopg2
 conn = psycopg2.connect(

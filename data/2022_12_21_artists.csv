@@ -1,55 +1,56 @@
-"id","spotifyid","name"
-22,"5a0etAzO5V26gvlbmHzT9W","Nicolas Jaar"
-27,"2933wDUojoQmvqSdTAE5NB","DARKSIDE"
-28,"1kR99O4MgSTasyeJh8UFCg","DJ Koze"
-29,"0uCCBpmg6MrPb1KY2msceF","Burial"
-30,"7Eu1txygG6nJttLHbZdQOh","Four Tet"
-35,"3LHqODf1hGAgZ5LTw1Gf4C","Acid Pauli"
-37,"0IVapwlnM3dEOiMsHXsghT","Nosaj Thing"
-40,"2AR42Ur9PcchQDtEdwkv4L","Floating Points"
-50,"7bfe7ceWNJ3OjzmnzcMpdu","FEATHERED SUN"
-54,"0ngUeF0DGpYmPec80MqSi1","Against All Logic"
-71,"49gaZqfow2v8EEQmjGyEIw","Todd Terje"
-78,"2L2unNFaPbDxjg3NqzpqhJ","Teebs"
-79,"46Ce0QmI1mE2bl5VQ4P9N8","Lapalux"
-80,"6y80I9YZi4DOpbaSUlL725","Shlohmo"
-81,"06xa1OLBsMQJFXcl2tQkH4","Machinedrum"
-82,"6olWbKW2VLhFCHfOi0iEDb","Hudson Mohawke"
-85,"48C2RLG6w7o4jAJjCJKZM8","Shigeto"
-86,"6kic5bCjlohhDn9KzXbOta","Clark"
-88,"1O10apSOoAPjOu6UhUNmeI","SBTRKT"
-106,"0e1hn6R8UCfLkpHINwAyXR","Zomby"
-118,"4mtHSXwIHihO6MWNq5Qoko","Squarepusher"
-133,"2exkZbmNqMKnT8LRWuxWgy","Moderat"
-164,"2sriRQRt36DnfHtD68zZlj","Dorian Concept"
-165,"1YRGQOk4Mk9EpM6nTJhXtK","Daedelus"
-167,"29XOeO6KIWxGthejQqn793","Flying Lotus"
-169,"3VwKSHAfgzV1DOHV0aANCI","TOKiMONSTA"
-170,"0rKc6ImQCM6pmYrQj5zcra","Mono/Poly"
-171,"1fQDzf4lnUF4DYngrLJH0m","letherette"
-195,"4CvTDPKA6W06DRfBnZKrau","Thom Yorke"
-227,"6TshTCYwh9ySzOO6Jy4Ux2","Maya Jane Coles"
-229,"6vJvFV1A2CpT8s5B1oUN6t","DJ Tennis"
-247,"3gNEIgLeknpwkNViU8WAhg","Oceanvs Orientalis"
-248,"0OltT51j3hIkgaDJqqPzDn","Nicola Cruz"
-261,"2nq2BeSbzExGAv3Y4HgUf7","Stephan Bodzin"
-281,"5nri3hyKmKBGAfvjBi0mK0","Satori"
-282,"1Ma3pJzPIrAyYPNRkp3SUF","Ross from Friends"
-377,"5zS8r5hRRk1jzD41yYS1NO","Baths"
-402,"2GqaakAnuhfpY4drbXrEmL","Devonwho"
-404,"3PU8Ju4WBYNY5xvJE3DMfV","Ras G"
-409,"2Y2gruKUC2cAjhe0h2RpzV","Groundislava"
-410,"5vSQUyT33qxr1xAX2Tkf3A","Clams Casino"
-439,"7A0awCXkE1FtSU8B0qwOJQ","Jamie xx"
-441,"6Tyzp9KzpiZ04DABQoedps","Little Dragon"
-553,"37uLId6Z5ZXCx19vuruvv5","Hot Chip"
-555,"066X20Nz7iquqkkCW6Jxy6","LCD Soundsystem"
-692,"23ymPLjbtAMzTJS2qRtQ8Z","Sébastien Tellier"
-756,"1tRBmMtER4fGrzrt8O9VpS","Hot Since 82"
-830,"5dVua2HdrY1VlbPh6OM9KZ","The Gaslamp Killer"
-835,"17Zu03OgBVxgLxWmRUyNOJ","Knxwledge"
-836,"5LhTec3c7dcqBvpLRWbMcf","Madlib"
-844,"21H0kHbS41lECHguMnjGpb","Dibia$E"
-848,"4QvHpCkjcyXyB5uH1LXTBk","Flyamsam"
-941,"2squZ8HjM4AzR0j6jsPn4a","MSTRKRFT"
-982,"45yEuthJ9yq1rNXAOpBnqM","Polo & Pan"
+'id','spotifyid','name'
+
+insert into public.artists (id, spotifyid, name) values (22,'5a0etAzO5V26gvlbmHzT9W','Nicolas Jaar');
+insert into public.artists (id, spotifyid, name) values (27,'2933wDUojoQmvqSdTAE5NB','DARKSIDE');
+insert into public.artists (id, spotifyid, name) values (28,'1kR99O4MgSTasyeJh8UFCg','DJ Koze');
+insert into public.artists (id, spotifyid, name) values (29,'0uCCBpmg6MrPb1KY2msceF','Burial');
+insert into public.artists (id, spotifyid, name) values (30,'7Eu1txygG6nJttLHbZdQOh','Four Tet');
+insert into public.artists (id, spotifyid, name) values (35,'3LHqODf1hGAgZ5LTw1Gf4C','Acid Pauli');
+insert into public.artists (id, spotifyid, name) values (37,'0IVapwlnM3dEOiMsHXsghT','Nosaj Thing');
+insert into public.artists (id, spotifyid, name) values (40,'2AR42Ur9PcchQDtEdwkv4L','Floating Points');
+insert into public.artists (id, spotifyid, name) values (50,'7bfe7ceWNJ3OjzmnzcMpdu','FEATHERED SUN');
+insert into public.artists (id, spotifyid, name) values (54,'0ngUeF0DGpYmPec80MqSi1','Against All Logic');
+insert into public.artists (id, spotifyid, name) values (71,'49gaZqfow2v8EEQmjGyEIw','Todd Terje');
+insert into public.artists (id, spotifyid, name) values (78,'2L2unNFaPbDxjg3NqzpqhJ','Teebs');
+insert into public.artists (id, spotifyid, name) values (79,'46Ce0QmI1mE2bl5VQ4P9N8','Lapalux');
+insert into public.artists (id, spotifyid, name) values (80,'6y80I9YZi4DOpbaSUlL725','Shlohmo');
+insert into public.artists (id, spotifyid, name) values (81,'06xa1OLBsMQJFXcl2tQkH4','Machinedrum');
+insert into public.artists (id, spotifyid, name) values (82,'6olWbKW2VLhFCHfOi0iEDb','Hudson Mohawke');
+insert into public.artists (id, spotifyid, name) values (85,'48C2RLG6w7o4jAJjCJKZM8','Shigeto');
+insert into public.artists (id, spotifyid, name) values (86,'6kic5bCjlohhDn9KzXbOta','Clark');
+insert into public.artists (id, spotifyid, name) values (88,'1O10apSOoAPjOu6UhUNmeI','SBTRKT');
+insert into public.artists (id, spotifyid, name) values (106,'0e1hn6R8UCfLkpHINwAyXR','Zomby');
+insert into public.artists (id, spotifyid, name) values (118,'4mtHSXwIHihO6MWNq5Qoko','Squarepusher');
+insert into public.artists (id, spotifyid, name) values (133,'2exkZbmNqMKnT8LRWuxWgy','Moderat');
+insert into public.artists (id, spotifyid, name) values (164,'2sriRQRt36DnfHtD68zZlj','Dorian Concept');
+insert into public.artists (id, spotifyid, name) values (165,'1YRGQOk4Mk9EpM6nTJhXtK','Daedelus');
+insert into public.artists (id, spotifyid, name) values (167,'29XOeO6KIWxGthejQqn793','Flying Lotus');
+insert into public.artists (id, spotifyid, name) values (169,'3VwKSHAfgzV1DOHV0aANCI','TOKiMONSTA');
+insert into public.artists (id, spotifyid, name) values (170,'0rKc6ImQCM6pmYrQj5zcra','Mono/Poly');
+insert into public.artists (id, spotifyid, name) values (171,'1fQDzf4lnUF4DYngrLJH0m','letherette');
+insert into public.artists (id, spotifyid, name) values (195,'4CvTDPKA6W06DRfBnZKrau','Thom Yorke');
+insert into public.artists (id, spotifyid, name) values (227,'6TshTCYwh9ySzOO6Jy4Ux2','Maya Jane Coles');
+insert into public.artists (id, spotifyid, name) values (229,'6vJvFV1A2CpT8s5B1oUN6t','DJ Tennis');
+insert into public.artists (id, spotifyid, name) values (247,'3gNEIgLeknpwkNViU8WAhg','Oceanvs Orientalis');
+insert into public.artists (id, spotifyid, name) values (248,'0OltT51j3hIkgaDJqqPzDn','Nicola Cruz');
+insert into public.artists (id, spotifyid, name) values (261,'2nq2BeSbzExGAv3Y4HgUf7','Stephan Bodzin');
+insert into public.artists (id, spotifyid, name) values (281,'5nri3hyKmKBGAfvjBi0mK0','Satori');
+insert into public.artists (id, spotifyid, name) values (282,'1Ma3pJzPIrAyYPNRkp3SUF','Ross from Friends');
+insert into public.artists (id, spotifyid, name) values (377,'5zS8r5hRRk1jzD41yYS1NO','Baths');
+insert into public.artists (id, spotifyid, name) values (402,'2GqaakAnuhfpY4drbXrEmL','Devonwho');
+insert into public.artists (id, spotifyid, name) values (404,'3PU8Ju4WBYNY5xvJE3DMfV','Ras G');
+insert into public.artists (id, spotifyid, name) values (409,'2Y2gruKUC2cAjhe0h2RpzV','Groundislava');
+insert into public.artists (id, spotifyid, name) values (410,'5vSQUyT33qxr1xAX2Tkf3A','Clams Casino');
+insert into public.artists (id, spotifyid, name) values (439,'7A0awCXkE1FtSU8B0qwOJQ','Jamie xx');
+insert into public.artists (id, spotifyid, name) values (441,'6Tyzp9KzpiZ04DABQoedps','Little Dragon');
+insert into public.artists (id, spotifyid, name) values (553,'37uLId6Z5ZXCx19vuruvv5','Hot Chip');
+insert into public.artists (id, spotifyid, name) values (555,'066X20Nz7iquqkkCW6Jxy6','LCD Soundsystem');
+insert into public.artists (id, spotifyid, name) values (692,'23ymPLjbtAMzTJS2qRtQ8Z','Sébastien Tellier');
+insert into public.artists (id, spotifyid, name) values (756,'1tRBmMtER4fGrzrt8O9VpS','Hot Since 82');
+insert into public.artists (id, spotifyid, name) values (830,'5dVua2HdrY1VlbPh6OM9KZ','The Gaslamp Killer');
+insert into public.artists (id, spotifyid, name) values (835,'17Zu03OgBVxgLxWmRUyNOJ','Knxwledge');
+insert into public.artists (id, spotifyid, name) values (836,'5LhTec3c7dcqBvpLRWbMcf','Madlib');
+insert into public.artists (id, spotifyid, name) values (844,'21H0kHbS41lECHguMnjGpb','Dibia$E');
+insert into public.artists (id, spotifyid, name) values (848,'4QvHpCkjcyXyB5uH1LXTBk','Flyamsam');
+insert into public.artists (id, spotifyid, name) values (941,'2squZ8HjM4AzR0j6jsPn4a','MSTRKRFT');
+insert into public.artists (id, spotifyid, name) values (982,'45yEuthJ9yq1rNXAOpBnqM','Polo & Pan');

@@ -1,216 +1,216 @@
-"arid","sourceartistid","targetartistid"
-25,22,27
-26,22,28
-27,22,29
-28,22,30
-33,22,35
-35,22,37
-38,22,40
-121,27,22
-124,27,54
-130,27,40
-136,27,30
-137,27,50
-140,27,29
-161,29,106
-165,29,30
-166,29,37
-169,29,40
-172,29,86
-175,29,79
-178,29,81
-179,29,78
-181,30,29
-185,30,86
-186,30,37
-193,30,40
-194,30,78
-199,30,118
-321,37,80
-322,37,78
-323,37,164
-324,37,85
-325,37,82
-327,37,165
-329,37,79
-331,37,81
-333,37,167
-334,37,86
-337,37,169
-338,37,29
-339,37,170
-340,37,171
-384,40,29
-392,40,81
-393,40,37
-394,40,78
-395,40,30
-398,40,79
-400,40,82
-583,50,247
-584,50,248
-593,50,35
-661,54,282
-667,54,28
-671,54,27
-673,54,22
-677,54,29
-679,54,30
-1141,78,80
-1142,78,37
-1143,78,85
-1144,78,402
-1145,78,79
-1146,78,164
-1148,78,165
-1149,78,404
-1150,78,171
-1151,78,170
-1155,78,167
-1157,78,169
-1159,78,81
-1161,79,80
-1162,79,78
-1164,79,81
-1165,79,409
-1167,79,37
-1168,79,171
-1169,79,85
-1171,79,164
-1174,79,169
-1177,79,170
-1178,79,410
-1181,80,37
-1182,80,78
-1183,80,169
-1184,80,409
-1185,80,79
-1188,80,170
-1189,80,85
-1191,80,167
-1193,80,402
-1195,80,164
-1196,80,410
-1199,80,165
-1201,81,164
-1205,81,79
-1206,81,37
-1207,81,78
-1208,81,165
-1209,81,85
-1210,81,171
-1211,81,82
-1213,81,170
-1217,81,86
-1218,81,80
-1219,81,167
-1221,82,164
-1222,82,37
-1224,82,81
-1225,82,78
-1227,82,167
-1230,82,86
-1236,82,165
-1237,82,80
-1240,82,79
-1281,85,164
-1283,85,78
-1284,85,37
-1287,85,80
-1290,85,165
-1291,85,79
-1292,85,81
-1296,85,170
-1299,85,402
-1300,85,171
-1301,86,118
-1311,86,164
-1316,86,165
-1343,88,439
-1348,88,79
-1350,88,441
-1353,88,81
-1354,88,29
-1356,88,37
-1358,88,169
-1706,106,29
-1944,118,86
-2248,133,28
-2251,133,30
-2257,133,37
-2259,133,86
-2862,164,170
-2865,164,37
-2869,164,402
-2870,164,82
-2871,164,85
-2872,164,165
-2873,164,81
-2874,164,78
-2877,164,86
-2878,164,404
-2879,164,171
-2884,165,164
-2886,165,37
-2887,165,167
-2888,165,78
-2889,165,404
-2892,165,170
-2893,165,830
-2895,165,402
-2897,165,85
-2898,165,86
-2921,167,165
-2922,167,78
-2923,167,37
-2926,167,81
-2927,167,835
-2928,167,80
-2929,167,169
-2931,167,836
-2932,167,82
-2935,167,79
-2939,167,164
-2940,167,85
-2961,169,80
-2962,169,167
-2963,169,37
-2964,169,81
-2965,169,78
-2966,169,171
-2967,169,79
-2968,169,170
-2969,169,85
-2971,169,165
-2975,169,410
-2976,169,402
-2978,169,404
-2980,169,409
-2981,170,402
-2982,170,844
-2984,170,404
-2989,170,164
-2990,170,169
-2991,170,80
-2993,170,78
-2996,170,171
-2997,170,830
-2999,170,848
-3000,170,167
-3001,171,402
-3003,171,170
-3005,171,169
-3006,171,78
-3007,171,844
-3009,171,404
-3012,171,164
-3013,171,79
-3014,171,80
-3015,171,85
-3018,171,81
-3019,171,165
-3020,171,37
-3482,195,30
-3483,195,29
-3492,195,40
-3493,195,167
+
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (25,22,27);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (26,22,28);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (27,22,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (28,22,30);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (33,22,35);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (35,22,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (38,22,40);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (121,27,22);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (124,27,54);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (130,27,40);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (136,27,30);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (137,27,50);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (140,27,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (161,29,106);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (165,29,30);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (166,29,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (169,29,40);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (172,29,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (175,29,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (178,29,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (179,29,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (181,30,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (185,30,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (186,30,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (193,30,40);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (194,30,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (199,30,118);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (321,37,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (322,37,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (323,37,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (324,37,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (325,37,82);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (327,37,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (329,37,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (331,37,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (333,37,167);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (334,37,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (337,37,169);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (338,37,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (339,37,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (340,37,171);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (384,40,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (392,40,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (393,40,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (394,40,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (395,40,30);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (398,40,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (400,40,82);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (583,50,247);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (584,50,248);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (593,50,35);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (661,54,282);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (667,54,28);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (671,54,27);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (673,54,22);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (677,54,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (679,54,30);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1141,78,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1142,78,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1143,78,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1144,78,402);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1145,78,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1146,78,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1148,78,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1149,78,404);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1150,78,171);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1151,78,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1155,78,167);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1157,78,169);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1159,78,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1161,79,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1162,79,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1164,79,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1165,79,409);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1167,79,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1168,79,171);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1169,79,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1171,79,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1174,79,169);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1177,79,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1178,79,410);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1181,80,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1182,80,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1183,80,169);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1184,80,409);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1185,80,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1188,80,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1189,80,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1191,80,167);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1193,80,402);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1195,80,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1196,80,410);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1199,80,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1201,81,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1205,81,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1206,81,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1207,81,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1208,81,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1209,81,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1210,81,171);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1211,81,82);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1213,81,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1217,81,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1218,81,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1219,81,167);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1221,82,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1222,82,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1224,82,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1225,82,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1227,82,167);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1230,82,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1236,82,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1237,82,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1240,82,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1281,85,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1283,85,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1284,85,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1287,85,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1290,85,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1291,85,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1292,85,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1296,85,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1299,85,402);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1300,85,171);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1301,86,118);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1311,86,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1316,86,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1343,88,439);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1348,88,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1350,88,441);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1353,88,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1354,88,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1356,88,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1358,88,169);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1706,106,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (1944,118,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2248,133,28);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2251,133,30);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2257,133,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2259,133,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2862,164,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2865,164,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2869,164,402);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2870,164,82);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2871,164,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2872,164,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2873,164,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2874,164,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2877,164,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2878,164,404);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2879,164,171);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2884,165,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2886,165,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2887,165,167);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2888,165,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2889,165,404);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2892,165,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2893,165,830);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2895,165,402);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2897,165,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2898,165,86);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2921,167,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2922,167,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2923,167,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2926,167,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2927,167,835);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2928,167,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2929,167,169);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2931,167,836);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2932,167,82);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2935,167,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2939,167,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2940,167,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2961,169,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2962,169,167);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2963,169,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2964,169,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2965,169,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2966,169,171);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2967,169,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2968,169,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2969,169,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2971,169,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2975,169,410);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2976,169,402);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2978,169,404);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2980,169,409);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2981,170,402);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2982,170,844);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2984,170,404);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2989,170,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2990,170,169);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2991,170,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2993,170,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2996,170,171);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2997,170,830);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (2999,170,848);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3000,170,167);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3001,171,402);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3003,171,170);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3005,171,169);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3006,171,78);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3007,171,844);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3009,171,404);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3012,171,164);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3013,171,79);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3014,171,80);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3015,171,85);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3018,171,81);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3019,171,165);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3020,171,37);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3482,195,30);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3483,195,29);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3492,195,40);
+insert into public.artistrelations (id, sourceartistid, targetartistid) values (3493,195,167);
