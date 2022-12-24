@@ -16,6 +16,14 @@ sudo apt-get install python3-venv
 python3 -m venv .omd
 
 
+### Venv setup on MacOS
+
+no install of python3-venv needed?
+
+python3 -m venv .name
+
+## Running Python3 in a VirtualEnv
+
 source path/to/.omd/bin/activate
 (alias this to "use omd"
 
