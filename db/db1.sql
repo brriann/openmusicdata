@@ -46,6 +46,7 @@ create table if not exists tracks (
 
 create index tracks_bpm on tracks (bpm);
 create index tracks_key on tracks (key);
+create index tracks_spotifyId on tracks (spotifyId);
 
 create table if not exists queriestoptracks (
     id serial primary key not null,

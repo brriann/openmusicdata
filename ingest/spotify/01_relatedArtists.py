@@ -5,8 +5,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 # INITIALIZE
 
-#settings
-ARTIST_LIMIT = 1000
+# settings
+ARTIST_LIMIT = 100
 
 # postgres / psycopg2
 conn = psycopg2.connect(
@@ -23,7 +23,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.spot
 
 cur = conn.cursor()
 
-cur.execute('select id, spotifyid, name from artists limit %s',
+cur.execute('select id, spotifyid, name from artists where highlighted = true limit %s',
     (ARTIST_LIMIT,))
 
 artists = cur.fetchall()
@@ -86,7 +86,7 @@ for idx, seedArtist in enumerate(artists):
     print('artistRelationsSaved', artistRelationsSaved)
     print('artistsSaved', artistsSaved)
 
-    # - - save queriesrelatedartist
+    # save queriesrelatedartist
     cur.execute('insert into queriesrelatedartist (seedArtistId, artistsSaved, relationsSaved) values(%s, %s, %s)',
         (seedArtistPrimaryKey, artistsSaved, artistRelationsSaved))
 
