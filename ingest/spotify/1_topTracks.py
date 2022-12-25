@@ -36,7 +36,7 @@ for idx, seedArtist in enumerate(artists):
     seedArtistName = seedArtist[2]
 
     cur.execute('select id from queriestoptracks where seedartistid = %s',
-    (seedArtistPrimaryKey,))
+        (seedArtistPrimaryKey,))
 
     existingQueryTopTracks = cur.fetchone()
     if existingQueryTopTracks is not None:

@@ -54,6 +54,15 @@ create table if not exists queriestoptracks (
     tracksSaved int not null default 0
 );
 
+-- Track Analysis
+
+create table if not exists queriestrackanalysis (
+    id serial primary key not null,
+    seedTrackId int not null references tracks (id),
+    bpmSaved boolean not null default false,
+    keySaved boolean not null default false
+);
+
 --  DJ Set aggregation
 
 create table if not exists djs (
