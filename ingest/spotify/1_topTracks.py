@@ -23,7 +23,14 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.spot
 
 cur = conn.cursor()
 
-cur.execute('select id, spotifyid, name from artists where highlighted = true limit %s',
+cur.execute('''
+    select a.id, a.spotifyid, a.name 
+    from artists a
+    left join queriestoptracks qtt
+    on a.id = qtt.seedArtistId
+    where a.highlighted = true
+    and qtt.id is null
+    limit %s''',
     (ARTIST_LIMIT,))
 
 artists = cur.fetchall()
@@ -35,13 +42,17 @@ for idx, seedArtist in enumerate(artists):
     seedArtistSpotifyId = seedArtist[1]
     seedArtistName = seedArtist[2]
 
-    cur.execute('select id from queriestoptracks where seedartistid = %s',
-        (seedArtistPrimaryKey,))
+    # INFO: removed need for check QTT with left join / qtt.id is nul in select statement
 
-    existingQueryTopTracks = cur.fetchone()
-    if existingQueryTopTracks is not None:
-        print('existingQueryTopTracks for: ', seedArtistName)
-        continue
+    # cur.execute('select id from queriestoptracks where seedartistid = %s',
+    #     (seedArtistPrimaryKey,))
+
+    # existingQueryTopTracks = cur.fetchone()
+    # if existingQueryTopTracks is not None:
+    #     print('existingQueryTopTracks for: ', seedArtistName)
+    #     continue
+
+
     print('RUNNING TOP_TRACKS ON:', seedArtistName)
     # set counters
     tracksSaved = 0

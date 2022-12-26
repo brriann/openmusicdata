@@ -23,7 +23,14 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=config.spot
 
 cur = conn.cursor()
 
-cur.execute('select id, spotifyid, name from artists where highlighted = true limit %s',
+cur.execute('''
+    select a.id, a.spotifyid, a.name 
+    from artists a
+    left join queriesrelatedartist qra
+    on a.id = qra.seedArtistId
+    where a.highlighted = true 
+    and qra.id is null
+    limit %s''',
     (ARTIST_LIMIT,))
 
 artists = cur.fetchall()
@@ -38,13 +45,16 @@ for idx, seedArtist in enumerate(artists):
     seedArtistSpotifyId = seedArtist[1]
     seedArtistName = seedArtist[2]
 
-    cur.execute('select id from queriesrelatedartist where seedartistid = %s',
-    (seedArtistPrimaryKey,))
+    # INFO: removed need for check QRA with left join / qra.id is nul in select statement
 
-    existingQueryRelatedArtist = cur.fetchone()
-    if existingQueryRelatedArtist is not None:
-        print('existingQueryRelatedArtist for: ', seedArtistName)
-        continue
+    # cur.execute('select id from queriesrelatedartist where seedartistid = %s',
+    # (seedArtistPrimaryKey,))
+
+    # existingQueryRelatedArtist = cur.fetchone()
+    # if existingQueryRelatedArtist is not None:
+    #     print('existingQueryRelatedArtist for: ', seedArtistName)
+    #     continue
+    
     print('RUNNING RELATED_ARTISTS ON:', seedArtistName)
     # set counters
     artistsSaved = 0
