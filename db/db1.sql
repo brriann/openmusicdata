@@ -92,6 +92,34 @@ insert into artists (spotifyId, name) values ('5a0etAzO5V26gvlbmHzT9W', 'Nicolas
 insert into artists (spotifyId, name) values ('6V4bkdqHvsJ2lqkIl4qnG7', 'Birds of Mind');
 insert into artists (spotifyId, name) values ('1tRBmMtER4fGrzrt8O9VpS', 'Hot Since 82');
 
+insert into artists (spotifyId, name, highlighted)
+values (
+	'3ICyfoySNDZqtBVmaBT84I',
+	'War',
+	true
+);
+
+insert into artists (spotifyId, name, highlighted)
+values (
+	'7GaxyUddsPok8BuhxN6OUW',
+	'James Brown',
+	true
+);
+
+insert into artists (spotifyId, name, highlighted)
+values (
+	'0FrpdcVlJQqibaz5HfBUrL',
+	'Rick James',
+	true
+);
+
+insert into artists (spotifyId, name, highlighted)
+values (
+	'3VNITwohbvU5Wuy5PC6dsI',
+	'Kool & The Gang',
+	true
+);
+
 insert into tracks (
     spotifyId, 
     artistId, 
