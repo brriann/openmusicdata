@@ -12,6 +12,8 @@ create index artists_spotifyId on artists (spotifyId);
 
 alter table artists add column highlighted boolean not null default false;
 
+alter table artists add constraint artists_spotifyId_unique unique (spotifyId);
+
 create table if not exists artistrelations (
     id serial primary key not null,
     sourceArtistId int not null,
@@ -47,6 +49,8 @@ create table if not exists tracks (
 create index tracks_bpm on tracks (bpm);
 create index tracks_key on tracks (key);
 create index tracks_spotifyId on tracks (spotifyId);
+
+alter table tracks add constraint tracks_spotifyId_unique unique (spotifyId);
 
 create table if not exists queriestoptracks (
     id serial primary key not null,
